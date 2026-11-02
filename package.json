@@ -1,0 +1,21 @@
+{
+  "name": "demo-metabase",
+  "version": "1.0.0",
+  "description": "The Bakery Ledger: a year in three artisan bakeries, analysed by the Metabase add-on on Clever Cloud.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": "24"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file-if-exists=.env --watch server.js",
+    "metabase:setup": "node --env-file-if-exists=.env scripts/metabase-setup.js",
+    "test": "node --env-file-if-exists=.env --test test/"
+  },
+  "dependencies": {
+    "pg": "8.23.1"
+  }
+}
