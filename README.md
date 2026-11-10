@@ -2,6 +2,8 @@
 
 > A whole year in the life of **Les Trois Fournils**, three artisan bakeries in Paris, Lyon and Marseille, hour by hour. The sales live in a **PostgreSQL add-on**; the **Metabase add-on** turns them into stories: croissants peak on Sunday mornings, the galette des rois rules January, heat waves kill bread. A small companion page, drawn as a bakery chalkboard with kraft paper and till receipts, embeds the Metabase questions and prints the SQL behind each one. Everything in Metabase is created by API from this repo, so a fresh add-on is ready in one restart.
 
+![The Bakery Ledger live on Clever Cloud: a sale rung up at the till lands in PostgreSQL and the embedded Metabase question shows the new ticket](docs/tour.gif)
+
 ![The Bakery Ledger: chalkboard menu written from PostgreSQL](docs/screenshot-desktop.jpg)
 
 | Stories, with the SQL on a receipt | Ring up a sale, watch Metabase read it | On a phone |
@@ -109,7 +111,7 @@ To run the provisioning by hand instead: `npm run metabase:setup` with the same 
 | `GET /health/deep` | PostgreSQL query + Metabase `/api/health`; 503 if either fails |
 | `GET /api/ledger` | Everything the page shows, as JSON |
 | `GET /api/embed?shop=Montmartre` · `?question=till_live` | A freshly signed embed URL and its payload |
-| `GET /api/till` · `POST /api/till` | Last tickets · ring up a sale (`{shop, product, units}`, 1 to 12 units, 20 per minute per address, 500 tickets kept) |
+| `GET /api/till` · `POST /api/till` | Last tickets · ring up a sale (`{shop, product, units}`: the shop and product ids listed in `till` of `/api/ledger`, 1 to 12 units, 20 per minute per address, 500 tickets kept) |
 
 ---
 
