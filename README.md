@@ -10,7 +10,7 @@
 |---|---|---|
 | ![Story card](docs/screenshot-story.jpg) | ![The till](docs/screenshot-till.jpg) | ![Phone](docs/screenshot-phone.jpg) |
 
-**Run it yourself.** A live copy runs at <https://app-490c16b0-46c5-4e5a-b892-2742df29fd88.cleverapps.io/> (redeployed on 2026-11-10; it may be stopped between demos). The steps in [Deploy on Clever Cloud](#deploy-on-clever-cloud) recreate it from scratch in about 20 minutes, most of it waiting for the Metabase add-on to start.
+**Run it yourself.** The hosted demo was taken down after the presales review (November 2026). The steps in [Deploy on Clever Cloud](#deploy-on-clever-cloud) recreate it from scratch in about 20 minutes, most of it waiting for the Metabase add-on to start.
 
 **Get certified.** This demo runs on Clever Cloud. To deploy your own apps the same way, get certified at the [Clever Cloud Academy](https://academy.clever.cloud/).
 
